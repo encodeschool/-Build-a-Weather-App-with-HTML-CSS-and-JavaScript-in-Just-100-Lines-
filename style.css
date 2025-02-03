@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    height: 100vh;
+}
+
+.container {
+    width: 1174px;
+    max-width: 100%;
+    margin: auto;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    width: 350px;
+    max-width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all .3s ease;
+    position: relative;
+}
+
+.card h1 {
+    margin-bottom: 50px;
+}
+
+.card p {
+    margin-top: 50px;
+}
+
+.card h2 {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.card sup {
+    font-size: 18px;
+    position: absolute;
+}
+
+.card.search_card {
+    display: flex;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.card input {
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.card button {
+    border-radius: 0 15px 15px 0;
+    transition: all .3s ease;
+}
+
+.card button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.card button, .card input {
+    height: 100%;
+    padding: 18px 15px;
+    outline: 0;
+    border: 0;
+}
+
+.hide {
+    position: absolute;
+    opacity: 0;
+    left: -500px;
+    visibility: hidden;
+}
+
+.card .image_wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    z-index: -1;
+}
